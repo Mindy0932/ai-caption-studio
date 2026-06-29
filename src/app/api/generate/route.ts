@@ -43,7 +43,7 @@ Hashtags:
       ),
     ])
 
-    const content = completion?.choices?.[0]?.message?.content
+    const content = (completion as any)?.choices?.[0]?.message?.content
 
     // -----------------------------
     // AI 成功返回
